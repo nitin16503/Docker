@@ -1,0 +1,11 @@
+services:
+  python-app:
+    build: ./
+    ports:
+      - 8080:3000
+    container_name: "python_application"
+    tty: true 
+    stdin_open: true
+    
+## use -->  "docker-compose run python-app"  --> because it take input from user   ##     
+     

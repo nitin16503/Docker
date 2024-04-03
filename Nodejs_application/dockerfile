@@ -1,0 +1,16 @@
+FROM node:20 
+#node:20 --> node verison 20
+
+WORKDIR /JS_application
+
+COPY . /JS_application
+
+#RUN  npm install --> not required in this node js application 
+
+EXPOSE 3000   
+# it doesn't mean that port 3000 not expose to host machine, it help in communication between 2 container
+
+
+CMD [ "node", "app.js"]
+
+#Open a web browser and visit http://localhost:3000/
